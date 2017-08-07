@@ -1,0 +1,15 @@
+flask:
+  build: flask
+  volumes:
+    - ./src/python:/home
+  command: python /home/main.py
+  environment:
+     - SECRET_KEY=${SECRET_KEY}
+  ports:
+    - "5000:5000"
+browserify:
+  build: browserify
+  volumes:
+    - ./src/jsx:/home/src
+    - ./src/python/static/js:/home/dist
+  command: bash -c "cd /home && watchify --poll=true -v -t [ babelify --presets [ react es2015 ] ] src/main.jsx -o dist/bundle.js"
