@@ -6,20 +6,24 @@ import _ from 'lodash';
 export default class Header extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
-    this.state.src = "/static/img/banners/"+props.images[Math.floor(Math.random() * props.images.length)];
-    this.state.srcType = this.state.src.substring(this.state.src.lastIndexOf('.')+1);
-    this.state.srcIsVideo = _.includes(['mp4','gifv'], this.state.srcType);
+    let { src, srcType, srcIsVideo } = this.pickImage(props.images);
+    this.state = { src, srcType, srcIsVideo };
+  }
+  
+  pickImage(images) {
+    let retObj = {};
+    retObj.src = "/static/img/banners/"+images[Math.floor(Math.random() * images.length)];
+    retObj.srcType = retObj.src.substring(retObj.src.lastIndexOf('.')+1);
+    retObj.srcIsVideo = _.includes(['mp4','gifv','webm'], retObj.srcType);
+    return retObj;
   }
   
   componentWillMount() {
   }
 
   componentWillReceiveProps(nextProps) {
-    let nextState = {};
-    nextState.src = "/static/img/banners/"+nextProps.images[Math.floor(Math.random() * nextProps.images.length)];
-    nextState.srcType = this.state.src.substring(this.state.src.lastIndexOf('.')+1);
-    nextState.srcIsVideo = _.includes(['mp4','gifv'], this.state.srcType);
+    let { src, srcType, srcIsVideo } = this.pickImage(props.images);
+    let nextState = { src, srcType, srcIsVideo };
     this.setState(nextState);
   }
 
