@@ -32,11 +32,11 @@ export default class SocialMedia extends Component {
     className = className || "";
     return <div className={className}>
       <div className="row">
-        <div className="row col s6">
-          <Github className="col s12" profile={'tfink419'}/>
-          <LinkedIn className="col s12" profile={'tyler-fink'} />
+        <div className="row col m6 s12">
+          <Github className="col center-text s11 push-s1 m9 push-m3" profile={'tfink419'}/>
+          <LinkedIn className="col m10 push-m2 s12" profile={'tyler-fink'} />
         </div>
-        <Facebook className="col s6" profile={'tfink42'} imageSrc={'/static/img/fink-facebook.jpg'} />
+        <Facebook className="col m6 s12" profile={'tfink42'} imageSrc={'/static/img/fink-facebook.jpg'} />
       </div>
     </div>;
   }

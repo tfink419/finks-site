@@ -38,7 +38,7 @@ export default class Header extends Component {
       { srcIsVideo ? <video className="responsive-video" style={ { width:'100%' } } src={src} loop={true} autoPlay={true}></video>
       : <img className="responsive-img" src={src} />
       }
-      <h2 className="red-text"><em>
+      <h2 className="red-text header"><em>
         Fink's Site
       </em></h2>
     </header>;

@@ -10,12 +10,21 @@ windowSiteData = {{siteData|tojson}}
     </script>
     <script type="text/javascript" src="{{url_for('static', filename='js/materialize.min.js')}}"></script>
     <style>
-.margin-top-12e {
-  margin-top: 12em;
+.header {
+  margin-top:.8rem;
+  margin-bottom: 3.2rem;
 }
-
-.border-none {
-  border: none !important;
+.IN-widget iframe {
+  -moz-transform: scale(0.75, 0.75); 
+  -webkit-transform: scale(0.75, 0.75);
+  -o-transform: scale(0.75, 0.75);
+  -ms-transform: scale(0.75, 0.75);
+  transform: scale(0.75, 0.75); 
+  -moz-transform-origin: top left;
+  -webkit-transform-origin: top left;
+  -o-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
 }
     </style>
   </head>
