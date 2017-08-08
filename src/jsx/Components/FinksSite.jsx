@@ -19,8 +19,7 @@ export default class FinksSite extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    let nextState = { nextProps };
-    this.setState(nextState);
+    // this.setState(nextState);
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -28,9 +27,9 @@ export default class FinksSite extends Component {
 
   render() {
     let { siteData } = this.state;
-    return <div>
-      <Header images={siteData.bannerImages} />
-      <div className="container">
+    return <div className="teal lighten-2">
+      <div className="container teal lighten-3">
+        <Header images={siteData.bannerImages} />
         <SocialMedia />
       </div>
     </div>;

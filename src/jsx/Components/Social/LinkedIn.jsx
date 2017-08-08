@@ -6,8 +6,7 @@ import load from 'load-script';
 export default class LinkedIn extends Component {
   constructor(props) {
     super(props);
-    this.state = { props };
-    load('http://platform.linkedin.com/in.js', function (err, script) {
+    load('https://platform.linkedin.com/in.js', function (err, script) {
       if (err) {
         console.log(err);
       }
@@ -18,12 +17,9 @@ export default class LinkedIn extends Component {
   }
   
   componentWillMount() {
-    console.log(this.state, this.props);
   }
 
   componentWillReceiveProps(nextProps) {
-    let nextState = { nextProps };
-    this.setState(nextState);
   }
 
   componentDidUpdate(prevProps, prevState) {

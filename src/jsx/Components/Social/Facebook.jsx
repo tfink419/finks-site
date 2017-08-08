@@ -4,17 +4,13 @@ import axios from 'axios';
 
 export default class Facebook extends Component {
   constructor(props) {
-    super(props);
-    this.state = { props };
+    super(props)
   }
   
   componentWillMount() {
-    console.log(this.state, this.props);
   }
 
   componentWillReceiveProps(nextProps) {
-    let nextState = { nextProps };
-    this.setState(nextState);
   }
 
   componentDidUpdate(prevProps, prevState) {
