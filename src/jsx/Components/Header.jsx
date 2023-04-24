@@ -1,6 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import ReactDOM from 'react-dom';
-import axios from 'axios';
 import _ from 'lodash';
 
 export default class Header extends Component {
@@ -18,16 +16,10 @@ export default class Header extends Component {
     return retObj;
   }
   
-  componentWillMount() {
-  }
-
   componentWillReceiveProps(nextProps) {
     let { src, srcType, srcIsVideo } = this.pickImage(props.images);
     let nextState = { src, srcType, srcIsVideo };
     this.setState(nextState);
-  }
-
-  componentDidUpdate(prevProps, prevState) {
   }
 
   render() {

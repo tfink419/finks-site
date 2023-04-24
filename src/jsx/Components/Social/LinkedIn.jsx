@@ -1,6 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import ReactDOM from 'react-dom';
-import axios from 'axios';
 import load from 'load-script';
 
 export default class LinkedIn extends Component {
@@ -16,14 +14,6 @@ export default class LinkedIn extends Component {
     });
   }
   
-  componentWillMount() {
-  }
-
-  componentWillReceiveProps(nextProps) {
-  }
-
-  componentDidUpdate(prevProps, prevState) {
-  }
 
   render() {
     let { className, profile } = this.props;

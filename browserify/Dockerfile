@@ -1,5 +1,5 @@
-FROM node:0.12.12
+FROM node:16.17.0
 
 RUN npm install -g watchify
-RUN cd /home && npm install react react-dom babelify babel-preset-react babel-preset-es2015
-RUN cd /home && npm install axios bluebird classnames lodash load-script
+RUN cd /home && npm install react react-dom babelify babel-preset-react
+RUN cd /home && npm install classnames lodash load-script

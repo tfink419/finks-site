@@ -1,6 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import ReactDOM from 'react-dom';
-import axios from 'axios';
 import Header from './Header.jsx';
 import SocialMedia from './Social/SocialMedia.jsx';
 
@@ -15,15 +13,6 @@ export default class FinksSite extends Component {
     this.state = { siteData:this.props.siteData };
   }
 
-  componentWillMount() {
-  }
-
-  componentWillReceiveProps(nextProps) {
-    // this.setState(nextState);
-  }
-
-  componentDidUpdate(prevProps, prevState) {
-  }
 
   render() {
     let { siteData } = this.state;

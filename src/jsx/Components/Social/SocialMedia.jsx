@@ -1,6 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import ReactDOM from 'react-dom';
-import axios from 'axios';
 import Github from './Github.jsx';
 import Facebook from './Facebook.jsx';
 import LinkedIn from './LinkedIn.jsx';
@@ -16,16 +14,11 @@ export default class SocialMedia extends Component {
     this.state = { siteData:this.props.siteData };
   }
 
-  componentWillMount() {
-  }
-
   componentWillReceiveProps(nextProps) {
     let nextState = { nextProps };
     this.setState(nextState);
   }
 
-  componentDidUpdate(prevProps, prevState) {
-  }
 
   render() {
     let { className } = this.props;

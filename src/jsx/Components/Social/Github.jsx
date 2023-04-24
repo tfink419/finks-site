@@ -1,21 +1,10 @@
 import React, { Component, PropTypes } from 'react';
-import ReactDOM from 'react-dom';
-import axios from 'axios';
 
 export default class Github extends Component {
   constructor(props) {
     super(props);
   }
   
-  componentWillMount() {
-  }
-
-  componentWillReceiveProps(nextProps) {
-  }
-
-  componentDidUpdate(prevProps, prevState) {
-  }
-
   render() {
     let { profile, className } = this.props;
     className = className || "";
