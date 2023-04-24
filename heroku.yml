@@ -4,16 +4,10 @@ build:
     browserify: browserify/Dockerfile
 release:
   command:
-    - cd /home
-    - browserify -v src/main.jsx -o dist/bundle.js
-  volumes:
-    - ./src/jsx:/home/src
-    - ./src/python/static/js:/home/dist
+    - browserify -v src/jsx/main.jsx -o src/python/static/js/bundle.js
   image: browserify
 run:
   web:
     command:
-    - python /home/main.py
-    volumes:
-      - ./src/python:/home
+    - python src/python/main.py
     image: flask
