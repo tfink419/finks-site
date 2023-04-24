@@ -1,5 +1,5 @@
 from flask import Flask, session, redirect, url_for, escape, request, render_template
-from urllib import urlencode
+from urllib.parse import urlencode
 import os
 
 PORT = int(os.environ.get('PORT', 5000))

@@ -1,3 +1,4 @@
 *.pyc
 .env
+venv
 # src/python/static/js/bundle.js
