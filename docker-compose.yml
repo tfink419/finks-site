@@ -14,4 +14,4 @@ services:
     volumes:
       - ./src/jsx:/home/src
       - ./src/python/static/js:/home/dist
-    command: bash -c "cd /home && watchify -v -t [ babelify --presets [ react ] ] src/main.jsx -o dist/bundle.js"
+    command: bash -c "cd /home && watchify -v src/main.jsx -o dist/bundle.js"

@@ -1,0 +1,10 @@
+build:
+  docker:
+    flask: flask/Dockerfile
+    browserify: browserify/Dockerfile
+release:
+  command:
+    - browserify -v src/main.jsx -o dist/bundle.js
+  image: browserify
+run:
+  web: python /home/main.py
