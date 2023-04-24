@@ -8,3 +8,4 @@ release:
   image: browserify
 run:
   web: python /home/main.py
+  image: flask
