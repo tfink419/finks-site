@@ -7,5 +7,6 @@ release:
     - browserify -v src/main.jsx -o dist/bundle.js
   image: browserify
 run:
-  web: python /home/main.py
-  image: flask
+  web:
+    command: python /home/main.py
+    image: flask
