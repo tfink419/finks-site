@@ -14,6 +14,11 @@ siteData["bannerImages"] = os.listdir("/home/static/img/banners/")
 def index():
     global siteData
     return render_template('index.html', siteData=siteData)
+
+@app.route('/privacy_policy')
+def index():
+    global siteData
+    return render('static/doc/privacy_policy.html')
     
 if __name__ == '__main__':
     if os.environ.get('PORT'):
