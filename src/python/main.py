@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.secret_key = os.environ['SECRET_KEY']
 
 siteData = {}
-siteData["bannerImages"] = os.listdir("/home/static/img/banners/")
+siteData["bannerImages"] = os.listdir("./static/img/banners/")
 
 @app.route('/')
 def index():
