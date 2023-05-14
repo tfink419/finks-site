@@ -1,1 +1,1 @@
-web: python ./src/python/main.py
+web: browserify -v ./src/jsx/main.jsx -o ./src/python/static/js/bundle.js && python ./src/python/main.py

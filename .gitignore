@@ -1,4 +1,5 @@
 *.pyc
 .env
 venv
+node_modules/*
 # src/python/static/js/bundle.js
