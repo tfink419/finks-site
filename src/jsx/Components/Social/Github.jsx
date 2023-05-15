@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 
 export default class Github extends Component {
   constructor(props) {
@@ -14,7 +14,3 @@ export default class Github extends Component {
   </div>;
   }
 }
-
-Github.propTypes = {
-  profile: PropTypes.string.isRequired
-};

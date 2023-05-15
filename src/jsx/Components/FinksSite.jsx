@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import Header from './Header.jsx';
 import SocialMedia from './Social/SocialMedia.jsx';
 
@@ -24,7 +24,3 @@ export default class FinksSite extends Component {
     </div>;
   }
 }
-
-FinksSite.propTypes = {
-  siteData: PropTypes.object.isRequired
-};

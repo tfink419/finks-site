@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 
 export default class Facebook extends Component {
   constructor(props) {
@@ -13,8 +13,3 @@ export default class Facebook extends Component {
     </div>;
   }
 }
-
-Facebook.propTypes = {
-  profile: PropTypes.string.isRequired,
-  imageSrc: PropTypes.string.isRequired
-};

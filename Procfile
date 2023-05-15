@@ -1,1 +1,1 @@
-web: browserify -v ./src/jsx/main.jsx -o ./src/python/static/js/bundle.js && python ./src/python/main.py
+web: yarn run browserify ./src/jsx/main.jsx -o ./src/python/static/js/bundle.js -t [ babelify --presets [ @babel/preset-react @babel/preset-env ] ] && python3 ./src/python/main.py

@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import Github from './Github.jsx';
 import Facebook from './Facebook.jsx';
 import LinkedIn from './LinkedIn.jsx';
@@ -34,6 +34,3 @@ export default class SocialMedia extends Component {
     </div>;
   }
 }
-
-SocialMedia.propTypes = {
-};

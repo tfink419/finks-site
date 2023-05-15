@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import load from 'load-script';
 
 export default class LinkedIn extends Component {
@@ -23,7 +23,3 @@ export default class LinkedIn extends Component {
     </div>;
   }
 }
-
-LinkedIn.propTypes = {
-  profile: PropTypes.string.isRequired
-};

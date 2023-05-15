@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import _ from 'lodash';
 
 export default class Header extends Component {
@@ -36,7 +36,3 @@ export default class Header extends Component {
     </header>;
   }
 }
-
-Header.propTypes = {
-    images: PropTypes.array.isRequired
-  };
